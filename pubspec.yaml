@@ -1,0 +1,57 @@
+name: flavor_flutter_study
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.3
+  flutter_flavorizr: ^2.1.4
+  firebase_core: ^2.1.0
+  firebase_remote_config: ^3.0.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flavorizr:
+  flavors:
+    dev:
+      app:
+        name: "Flavor Dev"
+      android:
+        applicationId: "com.example.dev"
+        firebase:
+          config: ".firebase/dev/google-services.json"
+      ios:
+        bundleId: "com.example.dev"
+
+    prod:
+      app:
+        name: "Flavor Prod"
+      android:
+        applicationId: "com.example.prod"
+      ios:
+        bundleId: "com.example.prod"
+
+    qa:
+      app:
+        name: "Flavor QA"
+      android:
+        applicationId: "com.example.qa"
+      ios:
+        bundleId: "com.example.qa"
+
+flutter:
+
+  uses-material-design: true
