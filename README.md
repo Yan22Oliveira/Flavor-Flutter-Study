@@ -1,5 +1,11 @@
 # Flavor Flutter Study
 
+# Flavors
+
+- Desenvolvimento
+- Produção
+- QA
+
 ## Build Dev
 `flutter run --flavor dev -t lib/main_dev.dart`
 
